@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body, .wrapper, .content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body{
+  padding: 0 10px;
+  min-height: 100vh;
+  background: #4A98F7;
+}
+.wrapper{
+  width: 300px;
+  padding: 30px 30px 30px 38px;
+  background: #fff;
+  border-radius: 10px;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.wrapper video{
+  padding-bottom: 15px;
+  width: 100%;
+}
+.timeCircle{
+  border: 1px solid;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.timeCircle h1,
+.timeCircle h3 {
+  display: block;
+
+}
+.wrapper .content{
+  width: 100%;
+  justify-content: space-between;
+}
+.column{
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  align-items: center;
+}
+h5{
+  margin-bottom: 0px !important;
+  margin-left: 15px;
+  width: 80px;
+}
+select{
+  width: 35%;
+  height: 35px;
+  border-radius: 2px;
+
+}
+.wrapper button{
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 17px 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: #4A98F7;
+}

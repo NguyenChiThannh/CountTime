@@ -30,6 +30,7 @@ function startCycle(timePerSet,timeWaiting) {
             }
             if (timer == 0) {
                 fiveSecondSound.pause();
+                fiveSecondSound.currentTime = 0;
                 clearInterval(currentIntervalId);
                 callback();
             }
@@ -38,16 +39,12 @@ function startCycle(timePerSet,timeWaiting) {
 
     function startWaiting() {
         let timeWaitingCountDown = timeWaiting
-        countdown(++timeWaitingCountDown, () => {
-            startPerSet()
-        })
+        countdown(++timeWaitingCountDown,startPerSet)
     }
 
     function startPerSet() {
         let timePerSetCountDown = timePerSet
-        countdown(++timePerSetCountDown, () => {
-            startWaiting()
-        })
+        countdown(++timePerSetCountDown,startWaiting)
     }
 
     startWaiting()

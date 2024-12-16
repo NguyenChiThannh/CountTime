@@ -27,8 +27,8 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/NguyenChiThannh/loopme-apis.git
-   cd loopme-apis
+   git clone [https://github.com/NguyenChiThannh/loopme-apis.git](https://github.com/Backend-Programmer-Intern/thanh.nguyen.git)
+   cd thanh.nguyen
    ```
 2. Install node module for each task
 
